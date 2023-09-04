@@ -3,34 +3,37 @@
 # Пользователь вводит 2 числа. n — кол-во элементов первого множества. m — кол-во элементов второго множества.
 # Затем пользователь вводит сами элементы множеств.
 
-# arr1 = []
-# arr2 = []
-# sum_arr = []
-# n = int(input("Введите количество чисел первого множества: "))
-# for i in range(n):
-#     x = int(input("Введите значение первого множества: "))
-#     arr1.append(x)
+arr1 = []
+arr2 = []
+sum_arr = []
+n = int(input("Введите количество чисел первого множества: "))
+for i in range(n):
+    x = int(input("Введите значение первого множества: "))
+    arr1.append(x)
 
-# m= int(input("Введите количество чисел второго множества: "))
-# for i in range(m):
-#     y = int(input("Введите значение второго множества: "))
-#     arr2.append(y)
+m= int(input("Введите количество чисел второго множества: "))
+for i in range(m):
+    y = int(input("Введите значение второго множества: "))
+    arr2.append(y)
 
-# print()
-# print(arr1)
-# print(arr2)
-# arr1.sort()
-# arr2.sort()
-# print()
-# print(arr1)
-# print(arr2)
-# print()
-# for i in range(len(arr1)):
-#     for j in range(len(arr2)):
-#         if arr1[i] == arr2[j]:
-#             sum_arr.append(arr1[i])
+print()
+print(arr1)
+print(arr2)
+arr1.sort()
+arr2.sort()
+print()
+print(arr1)
+print(arr2)
+print()
+for i in range(len(arr1)):
+    for j in range(len(arr2)):
+        if arr1[i] == arr2[j]:
+            sum_arr.append(arr1[i])
 
-# print(sum_arr)
+
+unique_arr = list(set(sum_arr))
+print(unique_arr)
+
 
 
 
