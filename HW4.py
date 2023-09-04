@@ -21,15 +21,10 @@ print(arr1)
 print(arr2)
 arr1.sort()
 arr2.sort()
-print()
-print(arr1)
-print(arr2)
-print()
 for i in range(len(arr1)):
     for j in range(len(arr2)):
         if arr1[i] == arr2[j]:
             sum_arr.append(arr1[i])
-
 
 unique_arr = list(set(sum_arr))
 print(unique_arr)
@@ -50,21 +45,21 @@ print(unique_arr)
 
 
 
-# def max_collected_berries(berries):
-#     n = len(berries)
-#     max_collected = 0
+def max_collected_berries(berries):
+    n = len(berries)
+    max_collected = 0
     
-#     for i in range(1, n - 1):
-#         collected = berries[i] + berries[i - 1] + berries[i + 1]
-#         max_collected = max(max_collected, collected)
+    for i in range(1, n - 1):
+        collected = berries[i] + berries[i - 1] + berries[i + 1]
+        max_collected = max(max_collected, collected)
     
-#     return max_collected
+    return max_collected
 
-# N = int(input("Введите количество кустов: "))
-# berries = []
-# for i in range(N):
-#     ai = int(input(f"Введите количество ягод на кусте {i + 1}: "))
-#     berries.append(ai)
+N = int(input("Введите количество кустов: "))
+berries = []
+for i in range(N):
+    ai = int(input(f"Введите количество ягод на кусте {i + 1}: "))
+    berries.append(ai)
 
-# result = max_collected_berries(berries)
-# print(f"Максимальное количество ягод, которое можно собрать за один заход: {result}")
+result = max_collected_berries(berries)
+print(f"Максимальное количество ягод, которое можно собрать за один заход: {result}")
